@@ -46,7 +46,7 @@ namespace Worker
                         if (!pgsql.State.Equals(System.Data.ConnectionState.Open))
                         {
                             Console.WriteLine("Reconnecting DB");
-                            pgsql = OpenDbConnection("Server=lks-rds.cvnb1e2wtrmb.us-east-1.rds.amazonaws.com:5432;Username=postgres;Password=LKSNCC2024;");
+                            pgsql = OpenDbConnection("Server=lks-rds.cvnb1e2wtrmb.us-east-1.rds.amazonaws.com;Username=postgres;Password=LKSNCC2024;");
                         }
                         else
                         { // Normal +1 vote requested

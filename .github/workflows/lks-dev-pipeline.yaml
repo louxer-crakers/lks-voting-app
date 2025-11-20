@@ -1,4 +1,4 @@
-name: lks-prod-pipeline
+name: lks-dev-pipeline
 
 on:
   push:
